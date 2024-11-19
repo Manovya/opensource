@@ -1,0 +1,6 @@
+def complete(X, Y, Z):
+    required = X * Y  
+    available = Z * 1440 
+    return "YES" if required <= available else "NO"
+X, Y, Z = map(int, input().split())
+print(complete(X, Y, Z))
