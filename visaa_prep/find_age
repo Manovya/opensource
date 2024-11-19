@@ -1,0 +1,6 @@
+def agex(X):
+    agediff = 25 - 10  
+    vigneshage = X - agediff
+    return vigneshage
+X = int(input())
+print(agex(X))
