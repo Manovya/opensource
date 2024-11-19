@@ -1,0 +1,13 @@
+def without_tick(test_cases):
+    results = []
+    for n, m in test_cases:
+        results.append(max(0, n - m))
+    return results
+T = int(input())
+test_cases = []
+for _ in range(T):
+    N, M = map(int, input().split())
+    test_cases.append((N, M))
+outputs = without_tick(test_cases)
+for result in outputs:
+    print(result)
