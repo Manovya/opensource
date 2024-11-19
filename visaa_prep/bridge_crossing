@@ -1,0 +1,7 @@
+inputdata = input().strip()
+X, Y, Z = map(int, inputdata.split())
+if Z < Y:  
+    print(0)
+else:
+    mangoes = (Z - Y) // X
+    print(mangoes)
