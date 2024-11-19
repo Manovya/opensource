@@ -1,0 +1,9 @@
+def determineWin(vignesh, charan):
+    if vignesh == charan:
+        return "NULL"
+    elif (vignesh == 'R' and charan == 'S') or (vignesh == 'S' and charan == 'P') or (vignesh == 'P' and charan == 'R'):
+        return "Vignesh"  
+    else:
+        return "Charan"  
+vigneshmove, charanmove = input().split()
+print(determineWin(vigneshmove, charanmove))
