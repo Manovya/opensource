@@ -1,0 +1,10 @@
+def reve_integer(n):
+    INTMIN, INTMAX = -2**31, 2**31 - 1
+    sign = -1 if n < 0 else 1
+    reve_n = int(str(abs(n))[::-1])
+    reve_n *= sign
+    if reve_n < INTMIN or reve_n > INTMAX:
+        return 0
+    return reve_n
+n = int(input())
+print(reve_integer(n))
